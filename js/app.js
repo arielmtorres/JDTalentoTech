@@ -1,4 +1,4 @@
-// Código JavaScript para manejar el remate de productos
+//  remate de productos
 document.addEventListener("DOMContentLoaded", () => {
   // Si existe el contenedor de productos, cargamos remate
   const contenedor = document.getElementById("contenedor-productos");
@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarProductosRemate(contenedor);
   }
 
-  // Actualizar el contador siempre al cargar cualquier página
+  // Actualizar el contador 
   actualizarContadorCarrito();
 });
 
-// Función para cargar productos de remate usando DummyJSON y agregar al HTML
+//  cargar productos de remate
 function cargarProductosRemate(contenedor) {
   const productosIDs = [11, 12, 13, 14, 43, 47, 95];
   contenedor.innerHTML = "";
@@ -42,7 +42,7 @@ function cargarProductosRemate(contenedor) {
   });
 }
 
-// Función para agregar productos al carrito usando localStorage
+// agregar productos al carrito usando localStorage
 function agregarAlCarrito(producto) {
   const key = "carrito_remate";
   let carrito = JSON.parse(localStorage.getItem(key)) || [];
@@ -52,7 +52,7 @@ function agregarAlCarrito(producto) {
 
 
 
-// Función global para actualizar el contador del carrito en el menú
+//  actualizar el contador del carrito en el menú
 function actualizarContadorCarrito() {
   const contador = document.getElementById("contador-carrito");
   if (contador) {
