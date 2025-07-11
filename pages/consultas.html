@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultas - Juanjo Domínguez</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header id="menu">
+        <div>
+            <img src="../img/juanjo-nombre.png"alt="Juanjo Domínguez" class="img-nombre">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./video.html">Video</a></li>
+                    <li><a href="./discografia.html">Discografía</a></li>
+                    <li><a href="./consultas.html">Consultas</a></li>
+                    <li><a href="./remate.html">🪑 Remate</a></li>
+                    <li><a href="./carrito.html">🛒 <span id="contador-carrito">0</span></a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="consultas">
+            <h2>Consultas</h2>
+            <form id="formulario" action="https://formspree.io/f/xeogjgow" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="email" required />
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Juanjo Domínguez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,102 +1,66 @@
-Este proyecto es una página web desarrollada en HTML, CSS y JavaScript, dedicada al gran guitarrista argentino Juanjo Domínguez, donde se presenta su historia, discografía, material audiovisual y un formulario de contacto. Además, incluye una sección interactiva de compras conectada a una API externa.
+Proyecto Final – Tienda Juanjo Domínguez    -  Descripción General
 
-🔗 Integración con API - Discografía Dinámica
-La sección de compras del sitio se conecta con la API pública de Discogs, una plataforma internacional especializada en la catalogación de música.
+Este proyecto consiste en una tienda web dedicada a la figura del guitarrista Juanjo Domínguez, desarrollada como ejercicio práctico para Talento Tech.
 
+Incluye:
 
-Se utiliza para consultar automáticamente los lanzamientos musicales de Juanjo Domínguez, filtrando por formato (CD o vinilo) y obteniendo en tiempo real:
+Visualización de productos desde APIs externas.
 
-📀 Título del disco
+Funcionalidad de carrito de compras utilizando localStorage.
 
-📅 Año de publicación
-
-💵 Precio más bajo disponible
-
-🎼 Lista de temas
-
-🖼️ Imagen de portada
+Diseño adaptado a diferentes resoluciones.
 
 
-  El archivo compras_api.js realiza consultas a la API de Discogs utilizando fetch() con un token de autenticación. Los resultados se cargan dinámicamente en el sitio para que el usuario pueda:
+APIs Consumidas
 
-    Ver discos disponibles
+1. DummyJSON API
+URL Base:
+https://dummyjson.com/products
 
-    Consultar detalles y temas
+Uso en el proyecto:
+Se utiliza para cargar productos de tipo “Remate – Pertenencias de colección Juanjo Domínguez” en la página remate.html.
+Se filtran productos por ID específico para personalizar la selección.
+Estos productos pueden agregarse al carrito, respetando el stock único por producto.
 
-    Agregar discos a un carrito de compras simulado con localStorage
+Página donde se utiliza:
 
+remate.html
 
-📄 Estructura del Sitio
-Sitio de tipo one-page con navegación por anclas (#id), dividido en:
-
-Encabezado (<header>)
-
-Título y menú de navegación fijo.
-
-Inicio (#inicio)
-
-Biografía breve y foto destacada.
-
-Discografía / Compras (compras.html)
-
-Conectada a la API de Discogs para mostrar discos reales.
-
-Carrito funcional con botones y confirmaciones.
-
-Video (#video)
-
-Reproductor embebido desde YouTube.
-
-Consultas (#consultas)
-
-Formulario de contacto básico.
-
-Footer (<footer>)
-
-Créditos y navegación secundaria.
+js/remate.js
 
 
-🎨 Estilos (CSS)
+Funcionalidades Implementadas
+✅ Carga de productos desde API dummyjson.
+✅ Botón "Agregar al carrito" con localStorage.
+✅ Página de carrito que recupera desde localStorage y permite:
 
-Uso de variables CSS (:root) para colores y tipografías.
+Vaciar carrito.
 
-Diseño responsive con media queries.
-
-Distribución por Flexbox y Grid.
-
-Efectos suaves de hover en botones y sombras en tarjetas.
-
-Carrito con estilo fijo y destacado, ajustable por z-index.
+Finalizar compra (redirección al home).
+✅ Carga de discos desde API Discogs en discografía, formato solo visual.
 
 
 
-🛠️ Tecnologías utilizadas
 
-HTML5, CSS3
+Además: 
 
-JavaScript nativo (fetch, localStorage)
-
-Google Fonts
-
-API de Discogs
-
-Responsive Design (Flexbox, Grid, Media Queries)
+2. Discogs API
+URL Base:
+https://api.discogs.com/database/search
 
 
-📁 Archivos principales
 
-index.html: estructura base del sitio.
+Uso en el proyecto:
+Se utiliza para mostrar la discografía de Juanjo Domínguez en formato CD y Vinilo, cargando dinámicamente los datos desde Discogs.
 
-compras.html: sección de discografía dinámica.
+Token:
+Autenticación mediante token personal.
 
-style.css: estilos personalizados y organizados.
+Página donde se utiliza:
 
-compras_api.js: integración con la API y lógica del carrito.
+discografia.html
 
+js/discografia.js
 
-👤 Autor del sitio
+Importante: En está versión la discografía no hay funcionalidad de carrito, solo visualización de discos.
 
-Torres Ariel Mauricio
-Proyecto académico realizado en el marco de Talento Tech - Front End JS
-C25013
-Docentes : Gabriel Munoz / Belén Romero   

@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juanjo Domínguez</title>
-  <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanjo Domínguez</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header id="menu">
-    <div>
-      <div>
-        <img src="img/juanjo-nombre.png" alt="Juanjo Domínguez" class="img-nombre" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#consultas">Consultas</a></li>
-          <li><a href="compras.html">Discografía 🛒 Compras</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header id="menu">
+        <div>
+            <img src="img/juanjo-nombre.png" alt="Juanjo Domínguez" class="img-nombre">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/video.html">Video</a></li>
+                    <li><a href="pages/discografia.html">Discografía</a></li>
+                    <li><a href="pages/consultas.html">Consultas</a></li>
+                    <li><a href="pages/remate.html">🪑 Remate</a></li>
+                    <li><a href="pages/carrito.html">🛒 <span id="contador-carrito">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <!-- el contenido se carga desde home.html -->
-  </main>
+    <main>
+        <p>
+            Heredero del alma del tango y el folklore argentino, <strong>Juanjo Domínguez</strong> — nacido un 23 de
+            octubre de 1951 en Junín, provincia de Buenos Aires, y se fue de gira un 10 de febrero de 2019 —
+            deslumbró al mundo con una técnica prodigiosa, destacando su tremolo en tres cuerdas. Su guitarra, como
+            mini orquesta hecha cuerdas, supo acompañar a grandes artistas como <strong>Andrés Calamaro, Diego
+                Cigala, María Graña, el Polaco Goyeneche y Horacio Guaraní</strong>, dejando un legado imborrable en
+            la música popular latinoamericana.
+        </p>
 
-  <footer>
-    <p>&copy; 2025 Juanjo Domínguez. Todos los derechos reservados.</p>
-  </footer>
+        <img class="img-inicio" src="img/juanjoguitarra.jpg" alt="Juanjo tocando la guitarra">
 
-  <!-- Scripts -->
-  <script src="./js/index_contenido.js"></script>
-  <script src="./js/compras_api.js"></script>
+        <section id="inicio">
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="audio-control">
+            <button id="btnMute" class="btn btn-outline-dark">▶️</button>
+        </div>
+        <p>&copy; 2025 Juanjo Domínguez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/audio.js"></script>
 </body>
+
 </html>
