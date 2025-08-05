@@ -1,66 +1,98 @@
-Proyecto Final – Tienda Juanjo Domínguez    -  Descripción General
+🎸 Proyecto Final – Tienda Juanjo Domínguez
+Descripción general
+Este proyecto es una tienda web dedicada al gran guitarrista argentino Juanjo Domínguez, desarrollada como ejercicio práctico para Talento Tech.
 
-Este proyecto consiste en una tienda web dedicada a la figura del guitarrista Juanjo Domínguez, desarrollada como ejercicio práctico para Talento Tech.
+Combina el consumo de APIs externas con funcionalidades de carrito, adaptabilidad responsive y un enfoque temático único que homenajea su legado musical.
 
-Incluye:
+📦 Funcionalidades principales
+✅ Carga de productos desde la API DummyJSON.
 
-Visualización de productos desde APIs externas.
+✅ Visualización dinámica de discos desde la API Discogs.
 
-Funcionalidad de carrito de compras utilizando localStorage.
+✅ Carrito de compras funcional utilizando localStorage.
 
-Diseño adaptado a diferentes resoluciones.
+✅ Diseño adaptable (responsive) para distintos dispositivos.
 
+✅ Navegación fluida entre secciones como Inicio, Remate, Discografía y Carrito.
 
-APIs Consumidas
+🛍️ Remate – Pertenencias de colección
+Sección que simula la venta de objetos personales relacionados a Juanjo Domínguez.
 
-1. DummyJSON API
-URL Base:
-https://dummyjson.com/products
+API utilizada: DummyJSON
 
-Uso en el proyecto:
-Se utiliza para cargar productos de tipo “Remate – Pertenencias de colección Juanjo Domínguez” en la página remate.html.
-Se filtran productos por ID específico para personalizar la selección.
-Estos productos pueden agregarse al carrito, respetando el stock único por producto.
+Página: remate.html
 
-Página donde se utiliza:
+JS: js/remate.js
 
-remate.html
+🔧 Detalles técnicos:
+Se filtran productos por ID específico.
 
-js/remate.js
+Los productos muestran información personalizada.
 
+Cada artículo respeta el stock único (no se puede comprar más de uno).
 
-Funcionalidades Implementadas
-✅ Carga de productos desde API dummyjson.
-✅ Botón "Agregar al carrito" con localStorage.
-✅ Página de carrito que recupera desde localStorage y permite:
+Funcionalidad de agregar al carrito con persistencia en localStorage.
+
+💿 Discografía – CD y Vinilo
+Sección que muestra la discografía disponible de Juanjo Domínguez, dividida en formatos.
+
+API utilizada: Discogs
+
+Autenticación: Mediante token personal.
+
+Página: discografia.html
+
+JS: js/discografia.js
+
+📌 Nota:
+En esta versión, la discografía es solo visual, sin integración con el carrito.
+
+🛒 Carrito de compras
+Recupera productos desde localStorage.
+
+Permite:
+
+Ver resumen de compra.
 
 Vaciar carrito.
 
-Finalizar compra (redirección al home).
-✅ Carga de discos desde API Discogs en discografía, formato solo visual.
+Finalizar compra (redirige al inicio).
+
+📱 Diseño responsive
+El sitio está diseñado para adaptarse correctamente a:
+
+Pantallas de escritorio
+
+Tablets
+
+Dispositivos móviles
+
+🔧 Tecnologías utilizadas
+HTML, CSS, JavaScript
+
+...
+.
+├── index.html
+├── remate.html
+├── discografia.html
+├── carrito.html
+├── js/
+│   ├── remate.js
+│   ├── discografia.js
+│   └── carrito.js
+├── css/
+│   └── estilos.css
+└── assets/
+    └── img/
+...
+
+📝 Créditos
+Proyecto desarrollado por [Tu Nombre] como trabajo final del curso Talento Tech – Argentina Programa.
+
+Inspirado en la vida y obra del maestro Juanjo Domínguez.
 
 
 
+APIs REST (DummyJSON, Discogs)
 
-Además: 
-
-2. Discogs API
-URL Base:
-https://api.discogs.com/database/search
-
-
-
-Uso en el proyecto:
-Se utiliza para mostrar la discografía de Juanjo Domínguez en formato CD y Vinilo, cargando dinámicamente los datos desde Discogs.
-
-Token:
-Autenticación mediante token personal.
-
-Página donde se utiliza:
-
-discografia.html
-
-js/discografia.js
-
-Importante: En está versión la discografía no hay funcionalidad de carrito, solo visualización de discos.
-
+localStorage para persistencia del carrito
