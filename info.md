@@ -70,7 +70,7 @@ Dispositivos móviles
 🔧 Tecnologías utilizadas
 HTML, CSS, JavaScript
 
-...
+
 .
 ├── index.html
 ├── remate.html
@@ -84,7 +84,7 @@ HTML, CSS, JavaScript
 │   └── estilos.css
 └── assets/
     └── img/
-...
+
 
 📝 Créditos
 Proyecto desarrollado por [Tu Nombre] como trabajo final del curso Talento Tech – Argentina Programa.
@@ -96,3 +96,4 @@ Inspirado en la vida y obra del maestro Juanjo Domínguez.
 APIs REST (DummyJSON, Discogs)
 
 localStorage para persistencia del carrito
+
